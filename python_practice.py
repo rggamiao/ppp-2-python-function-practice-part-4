@@ -7,6 +7,19 @@ print(max_num(1,2,3))
 print(max_num(100,50,1))
 print(max_num(15,30,2))
 
+def mult_list(lst):
+    if len(lst) == 0: ##These lines check if the length of the input list is zero. .
+        return 0
+        prod = lst[0]
+    if len(lst) > 1: ## If the list has more than one element, these lines start a loop that goes through each element of the list starting from the second element. 
+for i in lst[1:]:
+      prod = prod * i
+
+  return prod
+  print(mult_list([1,2,3]))
+print(mult_list([]))
+print(mult_list([15]))
+
 
 
 def pascal(n):
